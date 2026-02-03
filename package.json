@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "pnpm validate-rules && pnpm type-check && next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "type-check": "tsc --noEmit",
     "validate-rules": "cat package.json | grep -v 'validate-rules' | grep -E 'tailwindcss|tailwind|@tailwindcss|@mui|antd|chakra' && { echo '❌ ERROR: Dependencia prohibida detectada'; exit 1; } || echo '✅ OK: No hay dependencias prohibidas'"
   },
