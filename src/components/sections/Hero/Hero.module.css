@@ -1,0 +1,65 @@
+.hero {
+  min-height: 90vh; /* Dominar la pantalla inicial */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 50% 50%, var(--color-surface) 0%, var(--color-background) 100%);
+}
+
+.content {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.badge {
+  display: inline-block;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-accent);
+  background: rgba(37, 99, 235, 0.1); /* Blue-600 @ 10% */
+  padding: 0.5rem 1rem;
+  border-radius: 9999px; /* Pill shape */
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  margin-bottom: var(--spacing-xl);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.title {
+  font-size: var(--h1-size);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-foreground);
+}
+
+.highlight {
+  color: var(--color-secondary); /* Un poco más sutil para jerarquía */
+  /* Opcional: Gradiente de texto si el diseño lo permite, pero nos mantenemos en "Consultor Senior" sobrio */
+}
+
+.valueProp {
+  font-size: var(--font-size-xl);
+  color: var(--color-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-2xl);
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .actions {
+    flex-direction: row;
+    gap: var(--spacing-lg);
+  }
+}

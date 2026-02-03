@@ -1,0 +1,30 @@
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--form-input-border);
+  background-color: var(--form-input-bg);
+  font-size: var(--font-size-base);
+  color: var(--color-foreground);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--form-input-focus);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1); /* Subtle focus ring based on blue-600 */
+}
+
+.input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: var(--color-surface);
+}
+
+.error {
+  border-color: var(--color-error);
+}
+
+.error:focus {
+  box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.1);
+}

@@ -1,0 +1,26 @@
+{
+  "name": "diego-gauto-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "pnpm validate-rules && pnpm type-check && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "validate-rules": "cat package.json | grep -v 'validate-rules' | grep -E 'tailwindcss|tailwind|@tailwindcss|@mui|antd|chakra' && { echo '❌ ERROR: Dependencia prohibida detectada'; exit 1; } || echo '✅ OK: No hay dependencias prohibidas'"
+  },
+  "dependencies": {
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,29 @@
+.section {
+  background-color: var(--color-background);
+}
+
+.header {
+  margin-bottom: var(--spacing-2xl);
+  max-width: 600px;
+}
+
+.heading {
+  margin-bottom: var(--spacing-md);
+}
+
+.subheading {
+  font-size: var(--font-size-lg);
+  color: var(--color-secondary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

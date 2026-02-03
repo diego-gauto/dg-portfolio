@@ -1,0 +1,68 @@
+.section {
+  background-color: var(--color-surface); /* Distinct background for separation */
+}
+
+.header {
+  margin-bottom: var(--spacing-2xl);
+  max-width: 600px;
+}
+
+.heading {
+  margin-bottom: var(--spacing-md);
+}
+
+.subheading {
+  font-size: var(--font-size-lg);
+  color: var(--color-secondary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.categoryCard {
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+}
+
+.categoryTitle {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--color-primary);
+  display: inline-block;
+}
+
+.techList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.techItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.techName {
+  color: var(--color-foreground);
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.techDesc {
+  font-size: var(--font-size-sm);
+  color: var(--color-secondary);
+  line-height: 1.4;
+}
