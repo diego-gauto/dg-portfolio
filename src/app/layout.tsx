@@ -52,7 +52,7 @@ export default function RootLayout({
     <html lang="es" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
         <Navbar />
-        <main style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+        <main className="mainLayout">
           {children}
         </main>
         <Footer />

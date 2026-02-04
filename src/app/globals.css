@@ -129,6 +129,12 @@ a {
   text-decoration: none;
 }
 
+.mainLayout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Utilities (Minimalist approach) */
 .sr-only {
   position: absolute;
