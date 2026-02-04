@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { SectionContainer } from '@/components/ui/SectionContainer/SectionContainer';
 import styles from './Navbar.module.css';
 
 export function Navbar() {
